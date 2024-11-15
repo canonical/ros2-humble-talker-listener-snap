@@ -11,12 +11,11 @@ on:
 
 jobs:
   confined-snap:
-    uses: ubuntu-robotics/snap_workflows/.github/workflows/snap.yaml@main
+    uses: canonical/robotics-actions-workflows/.github/workflows/snap.yaml@main
     with:
-      branch-name: confined
-      snap-name: ros2-talker-listener
+      git-ref: confined
       snap-install-args: --dangerous
-      test-script: |
+      snap-test-script: |
                     #!/bin/bash
 
                     ### test snap connections are available in confined snap
