@@ -13,10 +13,9 @@ jobs:
   main-snap:
     uses: canonical/robotics-actions-workflows/.github/workflows/snap.yaml@main
     with:
-      branch-name: main
-      snap-name: ros2-talker-listener
+      git-ref: main
       snap-install-args: --devmode
-      test-script: |
+      snap-test-script: |
                     #!/bin/bash
 
                     ### test snap info consistency
