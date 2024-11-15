@@ -11,12 +11,11 @@ on:
 
 jobs:
   daemon-snap:
-    uses: ubuntu-robotics/snap_workflows/.github/workflows/snap.yaml@main
+    uses: canonical/robotics-actions-workflows/.github/workflows/snap.yaml@main
     with:
-      branch-name: daemon
-      snap-name: ros2-talker-listener
+      git-ref: daemon
       snap-install-args: --dangerous
-      test-script: |
+      snap-test-script: |
                     #!/bin/bash
                     ### test snap info consistency
                     info_expected_output="name:      ros2-talker-listener
