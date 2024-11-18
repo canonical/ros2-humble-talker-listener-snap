@@ -6,8 +6,8 @@ on:
 
 jobs:
   main-snap:
-    uses: ubuntu-robotics/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@main
+    uses: canonical/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@main
   confined-snap:
-    uses: ubuntu-robotics/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@confined
+    uses: canonical/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@confined
   daemon-snap:
-    uses: ubuntu-robotics/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@daemon
+    uses: canonical/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@daemon
