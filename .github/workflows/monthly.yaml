@@ -6,8 +6,17 @@ on:
 
 jobs:
   main-snap:
+    permissions:
+      contents: read
+      actions: write
     uses: canonical/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@main
   confined-snap:
+    permissions:
+      contents: read
+      actions: write
     uses: canonical/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@confined
   daemon-snap:
+    permissions:
+      contents: read
+      actions: write
     uses: canonical/ros2-humble-talker-listener-snap/.github/workflows/snap.yaml@daemon
